@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  text-align: left;
+   border: 1px solid black;
+   background-color: rgb(247, 246, 245);
+   height: 42px;
+   font-family: 'Poppins', sans-serif;
+   /* border-radius: 10px ; */
+}
+
+.navbar_div{
+    margin-top: 20px;
+}
+
+.navbar ul{
+    display: flex;   
+}
+
+
+.navbar ul li{
+     box-sizing: border-box;
+     list-style: none; 
+     margin-right: 80px;       
+}
+
+.sub_menu{
+
+   position: absolute; 
+   display: none; 
+   border: 1px solid black;
+   width:150px;
+   font-family: 'Ubuntu Mono', monospace;
+   font-style: italic;
+   font-weight: 200;
+   backface-visibility: hidden;
+   margin-top: 0px;
+   background-color: white;
+
+   /* box-sizing: border-box; */
+}
+
+.sub_menu ul li{
+    width: 130px;
+    /* padding: 5px; */
+    border-bottom: 1px  dotted black;
+    text-align: left;
+    margin-top: 4px;
+}
+
+.sub_menu ul li :last-child{
+    border-bottom: none;
+}
+
+.navbar ul li:hover .sub_menu{
+     display: block;           
+}
+
+.navbar ul li:hover .sub_menu ul {
+    display: block;
+    margin: 10px;   
+}
+
+.navbar_ul li ul :hover{
+   background: grey
+}
+
+.navbar_ul li a{
+    text-decoration: none;
+    color: black;
+} 
+  
+.sections{
+
+    display: flex;
+    border: 1px solid black;
+    padding: 40px 40px 40px 0px;
+    margin-bottom: 40px;  
+    background-color: rgb(179, 179, 255); 
+}
+
+.outer_box{
+     border-color: black;
+     margin: auto;    
+}
+
+.inner_box{
+    /* border: 1px  solid black; */
+    padding: 10px;
+    width: 180px;
+    height: 220px;
+    /* background-color: rgb(241, 198, 160);    */
+    border:1px ;
+    border-style: dashed;
+    border-radius: 30px 0px 0px 30px;
+    border-right-width: 3px;
+    border-right-color: rgb(8, 165, 8); 
+    /* text-align: center; */
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;      
+}
+
+.inner_front , .inner_back{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    /* padding: 20px; */
+    
+    /* text-align: center;    */
+}
+
+.outer_box:hover .inner_box{
+    transform: rotateY(.5turn);
+}
+
+.inner_front{
+    border-radius: 30px 0px 0px 30px;
+    background-color: rgb(233, 131, 131);
+    text-align: center;
+}
+
+.inner_back{
+    border-radius: 0px 30px 30px 0px;
+}
+
+.inner_title{
+    transform: translateZ(5rem);
+    font-family: cursive
+}
+
+.inner_subtitle{
+    transform: translateZ(3rem);
+}
+
+.inner_body{
+    transform: translateZ(4rem);
+}
+.inner_body li{
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.inner_body li a{
+    /* text-decoration: none; */
+    font-family: sans-serif;
+    color: black;
+}
+
+.inner_body li  :hover{
+    color: white
+}
+
+.inner_back{
+    transform: rotateY(0.5turn);
+}
+.placement_back{
+    background-color: rgb(255, 145, 2) ;
+}
+.gate_back{
+  background-color: rgb(54, 68, 82);
+}
+
+.road_map_back{
+    background-color: rgb(135, 67, 199)
+}
+
+.small_box{
+    width: 130px;
+    height: 80px;
+    border: 1px  solid black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px ;
+    border-style: dashed;
+    border-radius: 10px;
+    font-family: monospace;
+    text-decoration: none; 
+    color: black;   
+}
+
+.time_table_box{
+    background-color: rgb(103, 199, 223);
+}
+
+.notice_box{
+    background-color: rgb(255, 214, 161);
+}
+
+.events_box{
+    background-color: rgb(255, 87, 57);
+}
+
+.scholarship_box{
+    background-color: darkolivegreen;
+}
+
+.syllabus_box{
+    background-color: rgb(174, 255, 52);
+}
+
+.result_box{
+    background-color:rgb(38, 236, 38)
+}
+
+.faq_box{
+    background-color: rgb(255, 150, 29);
+}
+
+.pyq_box{
+    /* background-color: teal; */
+    background-color: pink;
+}
+
+
+/* .second_section :hover{
+    background-color:rgb(68, 67, 67) ;
+    color: white;
+} */
+
+.footer{
+    background-color: rgb(105, 97, 97);
+    justify-content: center;
+    padding: 20px;
+
+}
+.about_head{
+     margin: auto;
+}
+
+.abt_spn{
+    text-decoration: underline;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
