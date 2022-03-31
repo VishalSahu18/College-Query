@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Previous Year question Papers</title>
+</head>
+
+<body>
+
+    <h3 style="margin: 20px;">Previous Year question papers</h3>
+    <div class="select_div">
+        <div class="year_div ">
+            <select name="choose_year" id="year_select" class="year_select select_box">
+                <option value="" selected disabled>Select Year</option>
+                <option value="first_year" id="firstYear">First Year</option>
+                <option value="second_year" id="secondYear">Second Year</option>
+                <option value="third_year" id="thirdYear">Third Year</option>
+                <option value="fourth_year" id="fourtYear">Fourth Year</option>
+            </select>
+
+        </div>
+
+        <div class="branch_div">
+
+            <select name="choose_branch" id="branch_select" class="branch_select select_box">
+                <option value="" selected disabled>Branch</option>
+                <option value="ec">Electronic and Communication</option>
+                <option value="cs">Computer Science</option>
+                <option value="it">Information Technology</option>
+                <option value="ee">Electrical Engineering</option>
+                <option value="me">Mechanical Engineering</option>
+                <option value="ce">Civil Engineering</option>
+             </select>
+
+        </div>
+
+        <button id="search" style="padding: 3px; border-radius:5px;cursor: pointer; background-color: rgb(116, 112, 108);border: 1px solid black;">Search</button>
+    </div>
+
+        <!-- <div class="subject">
+
+            <select name="choose_subject" id="subject_select" class="subject_select select_box"> -->
+
+        <!-- <option value="" selected disabled>Subject</option> -->
+
+        <!-- First Year -->
+
+
+        <!-- <option value="sub">BT101 Engineering Chemistry</option>
+                        <option value="sub">BT102 Mathematics-I</option>
+                        <option value="sub">BT103 English for Communication </option>
+                        <option value="sub">BT104 Basic Electrical & ELectronics Engg.</option>
+                        <option value="sub">BT105 Engg. Graphics</option>
+                        <option value="sub">BT201 Engg. Physics</option>
+                        <option value="sub">BT202 Mathematics-II </option>
+                        <option value="sub">BT203 Basic Mechanical Engg.</option>
+                        <option value="sub">BT204 Basic Civil Engg. & Mechanics</option>
+                        <option value="sub">BT205 Basic Computer Engg.</option> -->
+
+        <!-- 
+                    Second Year 
+
+                    EC 
+                        <option>BT301 Mathematics-III </option>
+                        <option>EC302 EMI</option>
+                        <option>EC303 Digital System Design</option>
+                        <option>EC304 Electronic Devices </option>
+                        <option>EC305 Network Analysis</option>
+
+                        <option>EC401 Energy & Environmental Engg. </option>
+                        <option>EC402 Signal & System</option>
+                        <option>EC403 Analog Communication</option>
+                        <option>EC404 Control System</option>
+                        <option>EC405 Analog Circuit</option>
+
+                    CS 
+
+                        <option>ES301 Energy & Environmental Engg. </option>
+                        <option>CS302 Discrete Structure</option>
+                        <option>CS303 Data Structure</option>
+                        <option>CS304 Digital System </option>
+                        <option>CS305 Oriented Programming and Methodology</option>
+
+                        <option>BT401 Mathematics-III </option>
+                        <option>CS402 Analysis Design of Algorithm</option>
+                        <option>CS403 Software Engg.</option>
+                        <option>CS404 Computer org. & Architecture</option>
+                        <option>CS405 Operating System</option>
+
+
+                    IT   
+               
+
+                        <option>ES301 Energy & Environmental Engg. </option>
+                        <option>IT302 Discrete Structure</option>
+                        <option>IT303 Data Structure</option>
+                        <option>IT304 Digital Circuits & System </option>
+                        <option>IT305 Object Oriented Programming</option>
+
+                        <option>IT401 Mathematics-III </option>
+                        <option>IT402 Computer Architecture</option>
+                        <option>IT403 Analysis Design of Algorithm</option>
+                        <option>IT404 Analog & Digital Comm.</option>
+                        <option>IT405 DBMS/option>
+                   
+
+               
+                    EE  
+
+                        <option>ES301 Energy & Environmental Engg. </option>
+                        <option>EE302 Electromagnetic Field & Materials</option>
+                        <option>EE303 Electrical Measurements & Measuring Intruments</option>
+                        <option>EE304 Analog Electronics</option>
+                        <option>EE305 Network Analysis</option>
+
+                        <option>EE401 Mathematics-III </option>
+                        <option>EE402 Electrical Machine-I</option>
+                        <option>EE403 Digital Electronics Logic Design</option>
+                        <option>EE404 Power System-I</option>
+                        <option>EE405 Control System </option>
+
+                    ME 
+                        <option>ME301 Mathematics-III </option>
+                        <option>ME302 Thermodynamics</option>
+                        <option>ME303 Materials Technology</option>
+                        <option>ME304 Strength of Materials</option>
+                        <option>ME305 Manufacturing Process</option>
+                       
+                        <option>ES301 Energy & Environmental Engg. </option>
+                        <option>ME402 Intrumentation & Control </option>
+                        <option>ME403 Theory of Machines </option>
+                        <option>ME404 Fluid Mechanics</option>
+                        <option>ME405 Manufacturing Technology </option>
+
+                    CE
+
+                        <option>CE301 Mathematics-III </option>
+                        <option>CE302 Construction Materials</option>
+                        <option>CE303 Surveying</option>
+                        <option>CE304 Building Planning & Architecture</option>
+                        <option>CE305 Strength of Materials</option>
+                       
+                        <option>ES301 Energy & Environmental Engg. </option>
+                        <option>CE402 Construction Technology </option>
+                        <option>CE403 Structural Analysis-I </option>
+                        <option>CE404 Transportation Engg. -I</option>
+                        <option>CE405 Engg. Geology & Remote Sensing </option>
+                        
+                       
+                     THIRD YEAR
+                      
+                    EC  
+                        <option>EC501 Microprocessor & its Apps.</option>
+                        <option>EC502 Digit Comm.</option>
+
+                        <option>EC503(A) CNTL</option>
+                        <option>EC503(B) Mobile Comm.</option>
+                        <option>EC503(C) Advance Control System</option>
+                        
+                        <option>EC504(A) Electromagnetic Theory </option>
+                        <option>EC504(B) Computer System & org. </option>
+                        <option>EC504(C) Process Control Intrumentation </option>
+
+                      
+
+                        <option>EC601 Digital Signal Procss. </option>
+                        <option>EC602 Antenna & Wave Propagation</option>
+
+                        <option>EC603 (A) Data Comm.</option>
+                        <option>EC603 (B) CMOS Design</option>
+                        <option>EC603 (C) Satellite Comm.</option>
+
+                        <option>EC604(A) Microcontroller & Embedded System</option>
+                        <option>EC604(B) BioMedical Electronics</option>
+                        <option>EC604(C) Power Electronics</option>
+               
+                    CS
+
+                        <option>CS501 Theory of Computation</option>
+                        <option>CS502 DBMS</option>
+
+                        <option>CS503(A) Data Analytics</option>
+                        <option>CS503(B) Pattern Recognition</option>
+                        <option>CS503(C) Cyber Security</option>
+
+                        <option>CS504(A) Internet & Web Technology </option>
+                        <option>CS504(B) Object Oriented Programming </option>
+                        <option>CS504(C) Intro. to DBMS </option>
+
+                        <option>CS601 Machine Learning</option>
+                        <option>CS602 Computer Network</option>
+
+                        <option>CS603 (A) Advanced Computer Architecture (ACA)</option>
+                        <option>CS603 (B) Computer Graphics & Visualization </option>
+                        <option>CS603 (C) Compiler Design</option>
+
+                        <option>CS604(A) Knowledge Management</option>
+                        <option>CS604(B) Project Management</option>
+                        <option>CS604(C) Rutal Technology & Community Development</option>
+                        
+                    IT
+
+
+                        <option>IT501 Operating System</option>
+                        <option>IT502 Computer Network</option>
+
+                        <option>IT503(A) Theory of Computation </option>
+                        <option>IT503(B) Microprocessor & Interfacing</option>
+                        <option>IT503(C) Object Oriented Analysis & Design</option>
+
+                        <option>IT504(A) Artificial Intelligence </option>
+                        <option>IT504(B) E-Commerce & Governance </option>
+                        <option>IT504(C) Java Programming</option>
+
+                        <option>IT601  Computer Grpahics & Multmedian (ACA)</option>
+                        <option>IT602  Wireless & Mobile Computing</option>
+
+                        <option>IT603 (A) Compiler Design </option>
+                        <option>IT603 (B) Data Mining </option>
+                        <option>IT603 (C) Embedded Systems</option>
+
+                        <option>IT604(A) Intellectual Property Rights</option>
+                        <option>IT604(B) Software Engg.</option>
+                        <option>IT604(C) Wireless Sensor Networks</option>
+
+
+                    EE
+
+
+                        <option>CS501 Electrical Machine-II/option>
+                        <option>CS502 Power Electronics</option>
+
+                        <option>CS503(A) Electrical Power Generation & Economy</option>
+                        <option>CS503(B) Applied Intrumentation</option>
+                        <option>CS503(C) Electrical Engg. Material</option>
+
+                        <option>CS504(A) Industrial Electronics </option>
+                        <option>CS504(B) Signal & System </option>
+                        <option>CS504(C) Digital Control System</option>
+
+                        <option>CS601  Electrical Machine Design</option>
+                        <option>CS602 Power System-II</option>
+
+                        <option>CS603 (A) Power System Protection </option>
+                        <option>CS603 (B) Wind & Solar Energy </option>
+                        <option>CS603 (C) Digital Signal Processing</option>
+
+                        <option>CS604(A) Analog & Digital Comm.</option>
+                        <option>CS604(B) Energy Conservation & Manag.</option>
+                        <option>CS604(C) Power Plant Engg.</option>
+
+
+                    ME
+
+                        <option>ME501 Internal Combustion Engines</option>
+                        <option>ME502 Mechanical Vibrations</option>
+
+                        <option>ME503(A) Mechatronics </option>
+                        <option>ME503(B) Dynamics of Machine</option>
+                        <option>ME503(C) Alternate Automotive Fuels & Emissions</option>
+
+                        <option>ME504(A) Industrial Engg. Ergonomics </option>
+                        <option>ME504(B) TQM & SQC </option>
+                        <option>ME504(C) Finite Element Method</option>
+
+                        <option>ME601 Thermal Engg. & Gas Dynamics</option>
+                        <option>ME602  Machine Components & Design</option>
+
+                        <option>ME603 (A) Turbomachinery </option>
+                        <option>ME603 (B) Computer Aided Engg. </option>
+                        <option>ME603 (C) Product Design</option>
+
+                        <option>ME604(A) Robotics </option>
+                        <option>ME604(B) Optimization Technique</option>
+                        <option>ME604(C) Renewable Energy Technology</option>
+
+                    CE
+                        <option>CE501 Fluids Mechanics-I</option>
+                        <option>CE502 Transportation Engg. II</option>
+
+                        <option>CE503(A) Structural Analysis-II</option>
+                        <option>CE503(B) Construction Planning Manag. </option>
+                        <option>CE503(C) Quantity Surveying & Costing</option>
+                        <option>CE503(D) Marine Construction</option>
+
+                        <option>CE504(A) Urban & Town Planning </option>
+                        <option>CE504(B) Remote Sensing & GIS </option>
+                        <option>CE504(C) Renewable Energy Sources</option>
+                        <option>CE504(D) Entrepreneurship Development & Management</option>
+
+                        <option>CE601  Structural Design & Drawing (RCC-I)</option>
+                        <option>CE602  Environmental Engg. -I</option>
+                        <option>CE603 (A) Water Resource Engg. </option>
+                        <option>CE603 (B) Precast & Modular Construction </option>
+                        <option>CE603 (C) Advanced Pavement Design</option>
+                        <option>CE603 (C) Cost Effective & ECO-Friendly Structures</option>
+
+                        <option>CE604(A) Fluid Mech. II</option>
+                        <option>CE604(B) Intellectual Property Rights</option>
+                        <option>CE604(C) Environmental Impact Assessment</option>
+                        <option>CE604(C) Operation Research</option>
+
+
+
+                4th YEAR
+                    EC
+                        <option>EC701 VLSI Design</option>
+                        <option>EC702(A) Microwave Engg.</option>
+                        <option>EC702(B) Info. Theory & Coding</option>
+                        <option>EC702(C) Nano Electronics</option>
+                        <option>EC703(A) Cellular Moblie Comm. </option>
+                        <option>EC703(B) Internet of Thing (IoT) </option>
+                        <option>EC703(C) Probability Theory & Stochastic processing</option>
+
+                        <option>EC801 Optical Fiber Comm.</option>
+                        <option>EC802(A) AI & Signal Processing</option>
+                        <option>EC802(B) Wireless Comm.</option>
+                        <option>EC802(C) 5G Technology</option>
+                        <option>EC803(A) Wireless Network </option>
+                        <option>EC803(B) Digital Image Processing </option>
+                        <option>EC803(C) Speech Processing</option>
+
+                    CS
+                        <option>CS701 Software Architecture</option>
+                        <option>CS702(A) Computational Intelligence</option>
+                        <option>CS702(B) Deep & Reinforcement Learning</option>
+                        <option>CS702(C) Wireless Mobile Computing</option>
+                        <option>CS702(D) Big Data</option>
+                        <option>CS703(A) Cryptography & Info. Security </option>
+                        <option>CS703(B) Data Mining Warehousing</option>
+                        <option>CS703(C) Agile Software Development</option>
+                        <option>CS703(D) Disaster Manag.</option>
+
+                        <option>CS801 Internet of Thing (IoT)</option>
+                        <option>CS802(A) Block Chain Technology</option>
+                        <option>CS802(B) Cloud Computing</option>
+                        <option>CS802(C) High Performance Computing</option>
+                        <option>CS802(D) Object Oriented Software Engg.</option>
+                        <option>CS803(A)Image Processing Computer Vision </option>
+                        <option>CS803(B) Game Theory With Engg. Apps. </option>
+                        <option>CS803(D) Managing Innovation & Entrepreneurship</option>
+
+                    IT
+                        <option>IT701 Soft Computing</option>
+                        <option>IT702(A) Data Science</option>
+                        <option>IT702(B) Cloud Computing</option>
+                        <option>IT702(C) Simulation & Modeling </option>
+                        <option>IT702(D) Augmented & Virtual Reality </option>
+                        <option>IT703(A) Cyber Laws & Forensics </option>
+                        <option>IT703(B) Internet of Thing (IoT) </option>
+                        <option>IT703(C) Social Networks</option>
+                        <option>IT703(D) Digital Image Processing</option>
+
+                        <option>IT801 Info. Security</option>
+                        <option>IT802(A) Machine Learning</option>
+                        <option>IT802(B) Natural Language Processing</option>
+                        <option>IT802(C) Robotics</option>
+                        <option>IT802(D) Quantum Computing</option>
+                        <option>IT803(A) Block Chain Technology </option>
+                        <option>IT803(B) Human Computer Interaction</option>
+                        <option>IT803(C) Printing & Design </option>
+                        <option>IT803(D) Parallel Computing </option>
+                        
+                    EE 
+                        <option>EE701 Electrical Drives</option>
+                        <option>EE702(A) High Voltage Engg.</option>
+                        <option>EE702(B) Power Electronics Apps. to Power System/option>
+                        <option>EE702(C) Generalized Theory of Electrical Machine</option>
+                        <option>EE703(A) Utilization of Electrical Energy </option>
+                        <option>EE703(B) Soft Computing  Technique & Apps.</option>
+                        <option>EE703(C) Advanced Control System</option>
+
+                        <option>EE801 Power Quanlity Improvement & Mitigation Technique</option>
+                        <option>EE802(A) Advanced Electrical Drives</option>
+                        <option>EE802(B) Special Machine</option>
+                        <option>EE802(C) EHV A.C. & D.C. Transmission</option>
+                        <option>EE802(D) Apps of IOT in Electrical Engg.</option>
+                        <option>EE803(A) Artificial Intelligence </option>
+                        <option>EE803(B) Power Electronics Converters for Renewable Energy </option>
+                        <option>EE803(C) SCADA System & Apps.</option>
+                        <option>EE803(D) Data Analytics </option>
+
+                    ME
+                        <option>ME701 Heat & Mass Transfer</option>
+                        <option>ME702(A) Advance Machine Process</option>
+                        <option>ME702(B) Internet of Things</option>
+                        <option>ME702(C) Power Plant Engg.</option>
+                        <option>ME702(D) Advance Machine Design</option>
+                        <option>ME703(A) Operation Research & Supply Chain </option>
+                        <option>ME703(B) Artificial Intelligence Technique </option>
+                        <option>ME703(C) System Engg.</option>
+                        <option>ME703(C) Realiability Engg.</option>
+                        <option>ME801 Refrigeration & Air Conditioning</option>
+                        <option>ME802(A) Automobile Engg.</option>
+                        <option>ME802(B) Tribology & Maintenance Engg.</option>
+                        <option>ME802(C) Machine Tool Design</option>
+                        <option>ME802(D) Production Planning & Control</option>
+                        <option>ME803(A) Data Analytics </option>
+                        <option>ME803(B) Energy Conservation Manag. & Audit </option>
+                        <option>ME803(C) Entrepreneurship Manag. & Concepts</option>
+                        <option>ME803(D) Manag. Information System</option>
+
+
+                    CE
+                        <option>CE701 Geotechnical Engg.</option>
+                        <option>CE702(A) Prestressed Concrete Structure</option>
+                        <option>CE702(B) Environmental Engg. II</option>
+                        <option>CE702(C) Structural Dynamics</option>
+                        <option>CE702(C) Structural Design & Drawing</option>
+                        <option>CE703(A) Internet of Things </option>
+                        <option>CE703(B) Project Management</option>
+                        <option>CE703(C) Intergrated Waste Management</option>
+                        <option>CE703(D) Building Services</option>
+
+                        <option>CE801 Design of Steel Structures</option>
+                        <option>CE802(A) Enginnering Hydrology</option>
+                        <option>CE802(B) Foundation Engg.</option>
+                        <option>CE802(C) Bridge Engg. </option>
+                        <option>CE802(D) Earthquake Resistant Design of Struct. </option>
+                        <option>CE803(A) Artificial Intelligence </option>
+                        <option>CE803(B) Data Analytics </option>
+                        <option>CE803(C) Retrofitting & Rehabilitation of Struct.</option>
+                        <option>CE803(D) Integrated Water Manag.</option>
+
+                 -->
+
+
+
+        <!-- </select>
+
+    </div> -->
+
+
+   
+
+
+    <div class="papers_div">
+
+        <div class="section" id="first_section">
+
+            <!-- <div>
+                <span>BT-101</span>
+                <br>
+                <span><b>Chemistry</b></span>
+                <br><br>
+                <a href="FirstYear/bt101/2020.pdf">2020</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt101/2019 nov.pdf">2019</a> &nbsp; &nbsp;
+                <br><br>
+                <a href="FirstYear/bt101/2019 june.pdf">2019</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt101/2018 nov.pdf">2018</a> &nbsp; &nbsp;
+            </div>
+
+            <div>
+                <span>BT-102</span>
+                <br>
+                <span><b>Mathematics-I</b></span>
+                <br><br>
+                <a href="FirstYear/bt102/2020.pdf">2020</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt102/may-2019.pdf">2019</a> &nbsp; &nbsp;
+                <br><br>
+                <a href="FirstYear/bt102/nov-2018.pdf">2018</a> &nbsp; &nbsp;
+                <a href="http://">2018</a> &nbsp; &nbsp;
+            </div>
+
+            <div>
+                <span>BT-103</span>
+                <br>
+                <span><b>English</b></span>
+                <br><br>
+                <a href="FirstYear/bt103/2020.pdf">2020</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt103/nov-2019.pdf">2019</a> &nbsp; &nbsp;
+                <br><br>
+                <a href="FirstYear/bt103/2019.pdf">2019</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt103/2018.pdf">2018</a> &nbsp; &nbsp;
+            </div>
+
+            <div>
+                <span>BT-104</span>
+                <br>
+                <span><b>BEEE</b></span>
+                <br><br>
+                <a href="FirstYear/bt104/june-2020.pdf">2020</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt104/may-2019.pdf">2019</a> &nbsp; &nbsp;
+                <br><br>
+                <a href="FirstYear/bt104/nov-2019.pdf">2019</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt104/nov-2018.pdf">2018</a>
+            </div>
+
+            <div>
+                <span>BT-105</span>
+                <br>
+                <span><b>ED</b></span>
+                <br><br>
+                <a href="FirstYear/bt105/june-2020.pdf">2020</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt105/may-2019.pdf">2019</a> &nbsp; &nbsp;
+                <br><br>
+                <a href="FirstYear/bt105/may-2019.pdf">2019</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt105/nov-2018.pdf">2018</a>
+            </div> -->
+        </div>
+
+        <div class="section" id="second_section">
+            <!-- <div>
+                <span>BT-201</span>
+                <br>
+                <span><b>Physics</b></span>
+                <br><br>
+                <a href="FirstYear/bt201/2020.pdf">2020</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt201/may-2019.pdf">2019</a> &nbsp; &nbsp;
+                <br><br>
+                <a href="FirstYear/bt201/nov-2019.pdf">2019</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt201/nov-2018.pdf">2018</a>
+            </div>
+
+            <div>
+                <span>BT-202</span>
+                <br>
+                <span><b>Mathematics-II</b></span>
+                <br><br>
+                <a href="FirstYear/bt202/2020.pdf">2020</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt202/may-2019.pdf">2019</a> &nbsp; &nbsp;
+                <br><br>
+                <a href="FirstYear/bt202/nov-2019.pdf">2019</a> &nbsp; &nbsp;
+                <a href="http://">2018</a>
+            </div>
+
+            <div>
+                <span>BT-203</span>
+                <br>
+                <span><b>BME</b></span>
+                <br><br>
+                <a href="FirstYear/bt203/jun-2020.pdf">2020</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt203/may-2019.pdf">2019</a> &nbsp; &nbsp;
+                <br><br>
+                <a href="FirstYear/bt203/nov-2019.pdf">2019</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt203/nov-2018.pdf">2018</a>
+            </div>
+
+            <div>
+                <span>BT-204</span>
+                <br>
+                <span><b>Basic Civil Engg.</b></span>
+                <br><br>
+                <a href="FirstYear/bt204/jun-2020.pdf">2020</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt204/nov-2019.pdf">2019</a> &nbsp; &nbsp;
+                <br><br>
+                <a href="FirstYear/bt203/may-2019.pdf">2019</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt204/nov-2018.pdf">2018</a>
+            </div>
+
+            <div>
+                <span>BT-205</span>
+                <br>
+                <span><b>Basic Computer Engg</b></span>
+                <br><br>
+                <a href="FirstYear/bt205/2020.pdf">2020</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt205/may-2019.pdf">2019</a> &nbsp; &nbsp;
+                <br><br>
+                <a href="FirstYear/bt205/nov-2019.pdf">2019</a> &nbsp; &nbsp;
+                <a href="FirstYear/bt205/nov-2018.pdf">2018</a>
+            </div> -->
+        </div>
+
+    </div>
+
+
+    <div class="note">
+        <h2>Note:</h2>
+
+        <br>
+
+        <ul>
+            <li>Some of the question paper are not available above (mostly of higher semesters), we will update it soon.</li>
+            <br>
+            <li>If you have  any question paper of  latest year then you can mail us <a  href="mailto: collegequerysrit@gmail.com">here </a>. It can be very helpful for other students as well.Image in any format or pdf will be acceptable.We will update in website as soon as we get.</li>
+   
+        </ul>
+
+
+    </div>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .note{
+            
+            background-color: cadetblue;
+            border: 1px solid black;
+            margin: 5px;
+        }
+        .note ul{
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .select_div {
+            width: 500px;
+            margin-top: 30px;
+            margin-left: 20px;
+            border: 1px solid black;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .select_box {
+            width: 100%;
+            margin-top: 20px;
+            /* background-color: rgb(105, 92, 92); */
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .branch_div {
+            margin-bottom: 20px;
+        }
+
+       
+         .papers_div {
+            margin: 20px;
+            /* border: 1px solid black; */
+            padding: 10px;
+        }
+
+        .section {
+            margin-bottom: 10px;
+            /* border: 1px solid black; */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section div {
+            border: 1px solid black;
+            padding: 5px;
+            width: 150px;
+            height: 200px;
+            border-radius: 15px;
+            /* overflow: hidden; */
+        }
+
+        #first_section div:nth-child(1) {
+            background-color: palevioletred;
+        }
+
+        #first_section div:nth-child(2) {
+            background-color: rgb(168, 148, 141);
+        }
+
+        #first_section div:nth-child(3) {
+            background-color: rgb(18, 243, 224);
+        }
+
+        #first_section div:nth-child(4) {
+            background-color: rgb(117, 248, 10);
+        }
+
+        #first_section div:nth-child(5) {
+            background-color: rgb(255, 239, 17);
+        }
+
+        #second_section div:nth-child(1) {
+            background-color: rgb(85, 138, 235);
+        }
+
+        #second_section div:nth-child(2) {
+            background-color: rgb(173, 97, 69);
+        }
+
+        #second_section div:nth-child(3) {
+            background-color: rgb(245, 188, 188);
+        }
+
+        #second_section div:nth-child(4) {
+            background-color: rgb(138, 173, 109);
+        }
+
+        #second_section div:nth-child(5) {
+            background-color: rgb(252, 84, 196);
+        }
+
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+
+    <script src="pyq.js"></script>
+
+</body>
+
+</html>
